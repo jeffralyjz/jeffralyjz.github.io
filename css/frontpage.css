@@ -1,0 +1,168 @@
+/*-------------------------Misc-------------------------------*/
+h1{
+  color: white;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+#footer .inner {
+  padding: 5em 0 3em 0 ;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 55em;
+
+}
+
+#footer .inner > * {
+  width: 100%;
+}
+
+#footer .inner form {
+  margin: 0 3em 0 0;
+  width: calc(50% - 1.5em);
+}
+
+#footer .inner .contact {
+  width: calc(50% - 1.5em);
+}
+
+ul {
+  list-style-type: none;
+  color: white;
+}
+
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: lightblue;
+}
+
+/* mouse over link */
+a:hover {
+    color: yellow;
+}
+
+/* selected link */
+a:active {
+    color: green;
+}
+
+/*------------------------Picture Grid -----------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+    text-decoration-color: white;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding:0 4px;
+    justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+        justify-content: center;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+}
+
+/*------------------------Hover Map-----------------------*/
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .25s ease;
+  background-color: lightgrey;
+  /*background-image: url('images/MamaPapa.jpg')*/
+}
+
+.container:hover .overlay {
+  opacity: .75;
+}
+
+.text {
+  color: black;
+  font-size: 27px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
