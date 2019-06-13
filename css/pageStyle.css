@@ -1,0 +1,43 @@
+
+      body {
+          background-color: lightgrey;
+      }
+      p {
+          color: black;
+          text-align: center;
+          margin:0;
+          border-style: solid;
+          border-color:lightgrey;
+          border-left-width: 150px;
+          border-right-width:150px;
+      }
+      #Head {
+          background-color: powderblue;
+          border: 3px solid black;
+          padding: 5px;
+          text-decoration-color: red;
+          margin:0px;
+      }
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333333;
+      }
+      li.menu {
+          float: left;
+      }
+      li a.menu {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 10px;
+          text-decoration: none;
+      }
+      li a.menu:hover {
+          background-color: #222222;
+      }
+      li#here{
+        background-color: #000000; 
+      }
